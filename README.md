@@ -2,6 +2,8 @@
 
 A Python tool to fetch research papers from PubMed and identify papers with authors affiliated with pharmaceutical or biotech companies.
 
+[![Test PyPI version](https://img.shields.io/badge/test--pypi-v0.1.0-blue)](https://test.pypi.org/project/pubmed-papers/)
+
 ## Features
 
 - Fetch papers using PubMed API through Biopython
@@ -11,15 +13,23 @@ A Python tool to fetch research papers from PubMed and identify papers with auth
 
 ## Installation
 
-1. Make sure you have Python 3.8 or higher installed
+You can install the package from Test PyPI:
+
+```bash
+pip install -i https://test.pypi.org/simple/ pubmed-papers
+```
+
+Or install from source:
+
+1. Make sure you have Python 3.12 or higher installed
 2. Install Poetry (package manager) if you haven't already:
    ```bash
    curl -sSL https://install.python-poetry.org | python3 -
    ```
 3. Clone this repository:
    ```bash
-   git clone <repository-url>
-   cd pubmed-papers
+   git clone git@github.com:priyachourey/pubmedcli.git
+   cd pubmedcli
    ```
 4. Install dependencies:
    ```bash
@@ -63,6 +73,8 @@ pubmed_papers/
 - [Click](https://click.palletsprojects.com/) - CLI interface
 - [MyPy](https://mypy.readthedocs.io/) - Static type checking
 - [Black](https://black.readthedocs.io/) - Code formatting
+- [Cursor](https://cursor.sh/) - Modern IDE with AI capabilities
+
 
 ## Development
 

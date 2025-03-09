@@ -2,9 +2,20 @@
 name = "pubmed-papers"
 version = "0.1.0"
 description = "A tool to fetch research papers from PubMed with company affiliations"
-authors = ["Your Name <your.email@example.com>"]
+authors = ["choureypriya <choureypriya5@gmail.com>"]
 readme = "README.md"
 packages = [{include = "pubmed_papers"}]
+license = "MIT"
+keywords = ["pubmed", "research", "papers", "cli", "affiliations"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+]
 
 [tool.poetry.dependencies]
 python = "^3.12"
