@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "pubmed-papers"
+version = "0.1.0"
+description = "A tool to fetch research papers from PubMed with company affiliations"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+packages = [{include = "pubmed_papers"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+biopython = "^1.83"
+pandas = "^2.2.1"
+typing-extensions = "^4.9.0"
+click = "^8.1.7"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.2.0"
+mypy = "^1.8.0"
+pytest = "^8.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+get-papers-list = "pubmed_papers.cli:main" 
