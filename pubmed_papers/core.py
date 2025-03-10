@@ -22,7 +22,8 @@ class PubMedFetcher:
         }
         self.academic_keywords = {
             'university', 'college', 'institute', 'school',
-            'academia', 'hospital', 'medical center', 'clinic'
+            'academia', 'hospital', 'medical center', 'clinic',
+            'edu'
         }
 
     def is_company_affiliation(self, affiliation: Optional[str]) -> bool:
